@@ -1,0 +1,57 @@
+/* 서브 헤드 비주얼 디자인 */
+.sub-head-area {
+    height: 55rem;
+}
+.sub-head-area .container {
+    height: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    gap: 1.2rem;
+}
+.sub-head-area .text-wrap {
+    text-transform: uppercase;
+}
+.sub-head-area .text-wrap h2{
+    font: var(--text-ko-title-36px);
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+.sub-head-area .text-wrap p {
+    font: var(--text-ko-title-24px);
+}
+@media screen and (max-width: 768px){
+    .sub-head-area .container {
+        justify-content: flex-start;
+        padding-top: 120px;
+    }
+    .sub-head-area .text-wrap h2{
+        font-size: 3.2rem;
+    }
+    .sub-head-area .text-wrap p {
+        font: var(--text-ko-title-20px);
+    }
+}
+
+.section01 .text-wrap > h3{
+    font: var(--text-ko-title-32px);
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+.section01 .text-wrap > p {
+    margin-top: 2.8rem;
+    color: var(--color-gray600);
+    font: var(--text-ko-title-18px);
+}
+@media screen and (max-width: 768px) {
+    .section01 .text-wrap > h3 {
+        font: var(--text-ko-title-24px);
+        font-weight: 700;
+    }
+    .section01 .text-wrap > p {
+        font: var(--text-ko-title-16px);
+    }
+    
+}

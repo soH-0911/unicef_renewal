@@ -1,0 +1,159 @@
+.sub-head-area {
+    background-image: url(../img/sub05_notice/sub05_img_head_bg.jpg);
+}
+
+/* 검색바 */
+.search-area {
+    padding: 7.2rem 0;
+}
+.search-bar-wrap {
+    margin: 0 auto;
+    max-width: 65.8rem;
+    padding: 1rem 1rem 1rem 4rem;
+    border: 1px solid var(--color-gray300);
+    border-radius: 10rem;
+}
+.search-bar-inner form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.search-bar-inner input {
+    font: var(--text-ko-title-24px);
+    font-weight: 400;
+    width: 90%;
+    /* padding: 1.6rem 10%; */
+    border: 0;
+}
+.search-bar-inner input::placeholder {
+    color: var(--color-gray300);
+}
+.search-bar-inner button {
+    width: 4.6rem;
+    height: 4.6rem;
+    border-radius: 50%;
+    background-image: url(../img/sub05_notice/ico_search.png);
+    background-position: center center;
+}
+
+/* 게시글영역 */
+p.post-title.bold {font-weight: 700;}
+.label.not {
+    opacity: 0;
+}
+
+.post-wrap {
+    border-top: 1px solid var(--color-gray400);
+}
+.post-item {
+    border-bottom: 1px solid var(--color-gray200);
+}
+.post-item-inner {
+    padding: 2rem 8rem 2rem 3rem;
+}
+.post-item-inner a {
+    display: flex;
+    align-items: center;
+}
+.post-item-inner .label {
+    width: 10.4rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background: var(--color-blue500);
+    color: #fff;
+    font: var(--text-ko-title-24px);
+    font-weight: 700;
+    text-align: center;
+    flex-shrink: 0;
+}
+.post-item-inner .post-title {
+    padding-left: 2vw;
+    font: var(--text-ko-title-22px);
+    margin-right: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.post-item-inner .post-title:hover {
+    text-decoration: underline;
+}
+.post-item-inner .post-date {
+    padding-left: 8rem;
+    font: var(--text-ko-title-22px);
+    font-weight: 400;
+    color: var(--color-gray300);
+}
+
+/* 페이징 */
+.paging-area {
+    gap: 1rem;
+    padding: 6.6rem 0 9.6rem;
+    width: fit-content;
+    margin: 0 auto;
+    font: var(--text-ko-title-22px);
+    color: var(--color-gray600);
+    font-weight: 400;
+}
+.pc-paging-area {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.paging-area a {
+    padding: 1rem;
+}
+.paging-area a.on {
+    font-weight: 700;
+}
+.paging-list {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .search-area {
+        padding: 4rem 0;
+    }
+    .search-bar-wrap {
+        padding-left: 2rem;
+    }
+    .search-bar-inner input {
+        width: 80%;
+        font-size: 2rem;
+    }
+    .post-wrap {
+        border-top: 0;
+    }
+    .post-date {
+        display: none;
+    }
+    .post-item-inner {
+        padding-right: 2rem;
+    }
+    .post-item-inner .label {
+        width: 8rem;
+        font-size: 1.6rem;
+    }
+    
+    .post-item-inner .post-title {
+        font-size: 1.8rem;
+    }
+
+    .pc-paging-area {
+        display: none;
+    }
+    
+    .paging-area {
+        padding: 3.6rem 0 4rem;
+    }
+    .more-btn.hide-pc {
+        padding: 2rem;
+        text-align: center;
+        display: block;
+    }
+}
+@media screen and (max-width: 425px) {
+    .post-item-inner .label {
+        display: none;
+    }
+}

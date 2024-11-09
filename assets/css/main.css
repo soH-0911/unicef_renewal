@@ -1,0 +1,878 @@
+/********* 섹션01 - 메인비주얼 *********/
+.section01 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.section01-content-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.section01-swiper {
+    width: 100%;
+    height: 100%;
+}
+.section01-swiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section01-swiper .swiper-slide.visual-content {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section01-swiper .bg-img01 {
+    background-image: url(../img/index/img_sec01_bg01.jpg);
+}
+.section01-swiper .bg-img02 {
+    background-image: url(../img/index/img_sec01_bg02.jpg);
+}
+.section01-swiper .bg-img03 {
+    background-image: url(../img/index/img_sec01_bg03.jpg);
+}
+.section01-swiper .bg-img04 {
+    background-image: url(../img/index/img_sec01_bg04.jpg);
+}
+.section01-text-wrap {
+    margin-left: 16vw;
+    padding-bottom: 2rem;
+}
+.section01-text-wrap h2 {
+    font-family: 'pretendard', sans-serif;
+    font-size: 7.2rem;
+    font-weight: 700;
+    color: var(--color-blue500);
+    margin-bottom: 4rem;
+}
+.section01-text-wrap p {
+    font: var(--text-ko-title-22px);
+    line-height: 180%;
+    color: #fff;
+}
+.section01 .swiper-pagination.visual-pagination {
+    bottom: 26rem;
+}
+.section01 .swiper-pagination.visual-pagination .swiper-pagination-bullet {
+    width: 6rem;
+    height: 0.5rem;
+    border-radius: 0;
+}
+.section01 .swiper-pagination.visual-pagination .swiper-pagination-bullet-active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.section01 .visual-next,
+.section01 .visual-prev {
+    color: rgba(255, 255, 255, 0.8);
+}
+@media screen and (max-width: 768px) {
+    .section01 .swiper-slide {
+        justify-content: flex-start;
+    }
+    .section01-text-wrap {
+        margin-top: 16rem;
+        margin-left: 0;
+        padding: 0 2rem;
+    }
+    .section01-text-wrap h2 {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+    .section01-text-wrap p {
+        font-size: 1.8rem;
+    }
+    .section01-support {
+        display: none;
+    }
+    
+    .section01 .visual-prev,
+    .section01 .visual-next {
+        display: none;
+    }
+    .section01 .swiper-pagination.visual-pagination {
+        bottom: 4rem;
+    }
+    
+}
+@media screen and (max-width: 360px) {
+    .section01-text-wrap h2 {
+        font-size: 4rem;
+    }
+    .break-mo {
+        display: none;
+    }
+}
+
+.section01-support {
+    width: 100%;
+    height: fit-content;
+    background: rgba(1, 39, 50, 0.8);
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+}
+.section01-support-wrap {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem 4rem;
+    color: #fff;
+}
+.section01-support-wrap .info-text {
+    width: 50rem;
+    flex-shrink: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.08rem;
+    color: var(--color-blue500);
+    line-height: 130%;
+    padding-right: 2rem;
+}
+.section01-support-wrap .line {
+    width: 0.1rem;
+    height: 4.6rem;
+    background: var(--color-blue300);
+    margin: 0 2rem;
+    flex-shrink: 0;
+}
+.section01 .support-btn-wrap {
+    /* width: 100%; */
+    display: flex;
+    justify-content: flex-start;
+}
+.section01-support-wrap .support {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    /* margin-right: 8rem; */
+}
+.section01-support-wrap .btn-radio-wrap {
+    display: flex;
+    align-items: center;
+}
+.section01-support-wrap .btn-radio-wrap label:first-of-type {
+    margin-right: 2rem;
+    flex-shrink: 0;
+}
+.section01-support-wrap .btn-radio {
+    width: 2.6rem;
+    height: 2.6rem;
+    flex-shrink: 0;
+}
+.section01-support-wrap .btn-radio:checked {
+    background: var(--color-blue500);
+}
+.section01-support-wrap .btn-radio-wrap label {
+    font:var(--text-ko-title-18px);
+    font-weight: 600;
+    color: var(--color-gray100);
+    padding: 1rem;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.section01-support-wrap .btn-radio-wrap label:hover {
+    text-decoration: underline;
+}
+.section01-support-wrap .price-wrap {
+    display: flex;
+    gap: 2rem;
+    
+}
+.section01-support-wrap .price-wrap button{
+    padding: 1rem 2rem;
+    background: none;
+    border: 1px solid #fff;
+    font: var(--text-ko-title-18px);
+    color: #fff;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+.section01-support-wrap .price-wrap button:not(.on):hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+.section01-support-wrap .direct-input {
+    flex-shrink: 0;
+}
+.section01-support-wrap .direct-input label{
+    font:var(--text-ko-title-18px);
+    color: #fff;
+    margin-right: 2rem;
+}
+.section01-support-wrap .direct-input input[type='number'] {
+    width: 12.8rem;
+    height: 4rem;
+    padding-left: 1rem;
+    border: 1px solid var(--color-blue500);
+    font: var(--text-ko-title-18px);
+    color: var(--color-blue500);
+}
+.section01-support-wrap .direct-input span{
+    font:var(--text-ko-title-18px);
+    color: var(--color-blue500);
+    margin-left: 0.4rem;
+}
+.section01-support-wrap .btn {
+    background: var(--color-blue500);
+    color: #fff;
+    font:var(--text-ko-title-24px);
+    padding: 2rem 4rem;
+    margin-left: 4rem;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+.section01-support-wrap .btn:hover {
+    filter: brightness(80%);
+}
+.section01-support-wrap .btn i {
+    margin-left: 1.4rem;
+}
+
+/* input number 우측 화살표 숨기기 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* 후원금 버튼 클릭시 디자인*/
+.price-wrap button.on {
+    background: var(--color-blue500);
+    border: 0.1rem solid var(--color-blue500);
+}
+
+/* 후원금 영역 반응 */
+@media screen and (max-width: 1880px) {
+    .section01-support-wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .section01-support-wrap .info-text {
+        width: 100%;
+        text-align: center;
+    }
+    .section01-support-wrap .support {
+        width: 100%;
+        justify-content: center;
+        gap: 2rem;
+        margin: 0;
+    }
+    .section01-support-wrap .price-wrap {
+        gap: 1rem;
+    }
+    .section01-support-wrap .price-wrap .support {
+        margin: 0;
+    }
+    .section01-support-wrap .line {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 1260px) {
+    .section01-support-wrap .price-wrap {
+        display: none;
+    }
+}
+@media screen and (max-width: 899px) {
+    .section01 .support-btn-wrap {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .section01-support-wrap .btn {
+        width: 100%;   
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 650px) {
+    .section01-support-wrap .btn-radio-wrap label:first-of-type {
+        margin-right: 9rem;
+    }
+    .section01 .support-btn-wrap {
+        width: 100%;
+    }
+    .section01-support-wrap .support {
+        flex-direction: column;
+    }
+    .section01-support-wrap .direct-input input[type='number'] {
+        width: 18.8rem;
+    }
+}
+
+
+/********* 섹션02 - 나눔이야기 *********/
+.section02-content {
+    width: 100%;
+    height: 52.2rem;
+    position: relative;
+}
+.section02-content .img-box {
+    width: inherit;
+    height: 40rem;
+}
+.section02-content .content-inner-text {
+    font:var(--text-ko-title-24px);
+    text-align: left;
+    margin-top: 2.4rem;
+    line-height: 130%;
+}
+/* 스와이퍼 */
+.section02-content .swiper {
+    width: 100%;
+    height: inherit;
+  }
+.section02-content .swiper-wrapper {
+  padding-bottom: 5rem;
+}
+.section02-content .swiper-wrapper article {
+    transition: 0.3s;
+}
+.section02-content .swiper-wrapper article:hover {
+    filter: brightness(60%);
+}
+.section02-swiper .swiper-slide img {
+display: block;
+height: 100%;
+object-fit: cover;
+}
+
+.section02-content .navigation-wrapper {
+    width:140rem;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translateX(-50%);
+}
+.section02-content .btn-prev,
+.section02-content .btn-next {
+    position:static;
+    margin-top:0;
+    color: var(--color-gray400)
+}
+
+.section02-content .swiper-scrollbar {
+    display: none;
+    top: unset;
+    bottom: -3rem;
+}
+.section02-content .swiper-scrollbar-drag {
+    background-color: var(--color-blue900);
+}
+
+
+/* 나눔이야기 반응 */
+@media screen and (max-width: 1320px) {
+    .section02-content .navigation-wrapper {
+        display: none;
+    }
+    .section02-content .swiper-scrollbar {
+        display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section02-content .content-inner-text {
+        font: var(--text-ko-title-20px);
+        line-height: 150%;
+    }
+    .break-mo {
+        display: none;
+    }
+}
+
+/********* 섹션03 - UN 공식기관 유니세프 *********/
+.section03 {
+    background: #eee;
+}
+.section03 .title-area {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.section03 .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3vmin;
+}
+
+.section03 .wrapper .info-item-imgArea {
+    height: 24vh;
+    line-height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section03 .wrapper .info-item-imgArea img {
+    max-width: 16rem;
+    height: auto;
+}
+.section03 .wrapper .info-item-text {
+    font: var(--text-ko-body-16px);
+    margin-top: 2rem;
+}
+.animation-customer .container {
+    padding: 2rem;
+}
+.animation-customer .marquee {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+
+}
+.animation-customer .marquee::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #fff 0%, #ffffff00 50%, #fff 100%);
+}
+.animation-customer .marquee-inner{
+    display: flex;
+    animation: ani01 40s linear infinite;
+}
+.animation-customer .marquee-inner li {
+    height: 3.2rem;
+    margin: 0 3vmax;
+}
+.animation-customer .marquee-inner li img{
+    width: fit-content;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes ani01 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section03 .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    .animation-customer .marquee-inner li {
+        height: 2.4rem;
+    }
+}
+@media screen and (max-width: 360px) {
+    .section03 .wrapper {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}
+
+/* 섹션04 - 사업소개 */
+.section04 .title-area {
+    text-align: center;
+    justify-content: center;
+}
+.section04 .wrap{
+    width: 100%;
+    letter-spacing:-0.5px;
+    margin-top: 4.6rem;
+}
+.section04 .tab_menu{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3.6rem;
+}
+.section04 .tab_menu .list{
+    display: flex;
+    gap: 4rem;
+}
+.section04 .tab_menu .list li {
+    transition: 0.3s;
+}
+.section04 .tab_menu .list li:not(li.is_on):hover {
+    filter: brightness(88%);
+}
+.section04 .tab_menu .list li.is_on .btn{
+    font-weight:bold; color:white;
+    background: var(--color-blue500);
+}
+.section04 .tab_menu .list li .btn{
+    font:var(--text-ko-title-24px);
+    color: var(--color-gray300);
+    padding: 1rem 2rem;
+    background:var(--color-gray100);
+    border-radius: 3rem;
+    transition: 0.3s;
+}
+.section04 .tab_menu .cont_area{
+    margin-top:10px;
+    width: 100%;
+}
+.section04 .tab_menu .cont_area .cont{
+    display:none;
+    width:100%;
+    box-shadow: var(--shadow-box);
+}
+.section04 .tab_menu .cont_area .cont .img-area {
+    height: 38.9rem;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section04 .tab_menu .cont_area .cont .img-area.bg-img01 {
+    background-image: url(../img/index/img_sec04_bg01.jpg);
+    background-position: center;
+}
+.section04 .tab_menu .cont_area .cont .img-area.bg-img02 {
+    background-image: url(../img/index/img_sec04_bg02.jpg);
+    background-position: center;
+}
+.section04 .tab_menu .cont_area .cont .img-area.bg-img03 {
+    background-image: url(../img/index/img_sec04_bg03.jpg);
+    background-position: bottom;
+}
+.section04 .tab_menu .cont_area .cont .img-area .inner-text-wrap {
+    font:var(--text-ko-title-24px);
+    margin-left: 4vw;
+    margin-top: 6rem;
+}
+.section04 .tab_menu .cont_area .cont .img-area .inner-text-wrap span {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+.section04 .tab_menu .cont_area .cont .img-area .inner-text-wrap span:first-of-type {
+    color: var(--color-blue500);
+    position: relative;
+    z-index: 5;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 30rem;
+    border: 1px solid var(--color-blue500);
+}
+.section04 .tab_menu .cont_area .info-area {
+    height: 13rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+    padding: 2rem;
+    border: 1px solid var(--color-gray100);
+}
+.section04 .tab_menu .cont_area .info-area .title {
+    font:var(--text-ko-title-20px);
+    color: var(--color-gray700);
+    margin-right: 2.4rem;
+}
+.section04 .tab_menu .cont_area .info-area .counter {
+    font: var(--text-ko-title-24px);
+    color: var(--color-blue500);
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+.section04 .tab_menu .cont_area .info-area .unit {
+    font: var(--text-ko-body-16px);
+    color: var(--color-gray400);
+}
+
+@media screen and (max-width: 768px) {
+    .section04 .container {
+        padding: 0;
+    }
+    .section04 .tab_menu .list {
+        gap: 1rem;
+    }
+    .section04 .tab_menu .list li .btn {
+        font: var(--text-ko-body-16px);        
+    }
+    .section04 .tab_menu .cont_area  {
+        box-shadow: none;
+    }
+    .section04 .tab_menu .cont_area .cont .img-area .inner-text-wrap {
+        font: var(--text-ko-body-16px);
+        gap: 1.5rem;
+    }
+    .section04 .tab_menu .cont_area .info-area .title {
+        font:var(--text-ko-body-14px);
+    }
+    .section04 .tab_menu .cont_area .info-area .counter {
+        font: var(--text-ko-title-24px);
+        font-weight: 700;
+    }
+    .section04 .tab_menu .cont_area .info-area .unit {
+        font: var(--text-ko-caption-12px);
+    }
+}
+@media screen and (max-width: 496px) {
+    .section04 .tab_menu .cont_area .info-area {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.6rem;
+    }
+}
+
+/* 굿즈 배너 슬라이드 */
+.banner-slide-container {
+    margin-bottom: 12rem;
+}
+.banner-slide {
+    padding: 2rem 0;
+    height: 32vmin;
+}
+.swiper-slide .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.swiper-banner01 {
+    background-image: url(../img/index/img_goods_banner01.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.swiper-banner02 {
+    background-image: url(../img/index/img_goods_banner02.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide-inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vw;
+    color: #fff;
+}
+.swiper-slide-inner p:first-of-type {
+    font: var(--text-en-body-16px);
+    text-transform: uppercase;
+}
+.swiper-slide-inner p:nth-of-type(2) {
+    font: var(--text-ko-title-32px);
+    font-weight: 700;
+}
+.text-slide01 a{
+    transition: 0.3s;
+    width: 16rem;
+    padding: 1.2rem;
+    border: 1px solid #fff;
+    text-align: center;
+    font: var(--text-ko-body-16px);
+}
+.text-slide01 a:hover {
+    background: #fff;
+    color: var(--color-gray800);
+}
+.swiper-slide .container {
+    position: relative;
+    padding: 2rem;
+}
+.text-slide02 .btn-go {
+    transition: 0.3s;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 9.6rem;
+    height: 9.6rem;
+    background-image: url(../img/index/img_goods_banner_btn.png);
+    background-size: cover;
+}
+.text-slide02 .btn-go:hover {
+    filter: brightness(80%);
+}
+.text-slide02 p:last-of-type {
+    width: fit-content;
+    padding: 0 2rem;
+    font: var(--text-ko-title-24px);
+    font-size: 2.8rem;
+    color: var(--color-blue500);
+    background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .banner-slide {
+        padding: 2rem 0;
+        height: 30rem;
+    }
+    .swiper-slide .container {
+    }
+    .swiper-banner01 {
+        background-image: url(../img/index/img_goods_banner01_mo.jpg);
+        background-position: center bottom;
+    }
+    .swiper-banner02 {
+        background-image: url(../img/index/img_goods_banner02_mo.jpg);
+        background-position: center bottom;
+    }
+    .swiper-slide-inner {
+        gap: 2rem;
+    }
+    .swiper-slide-inner p:first-of-type {
+        font: var(--text-en-body-14px);
+    }
+    .swiper-slide-inner p:nth-of-type(2) {
+        font-size: 2.4rem;
+    }
+    .text-slide02 p:last-of-type {
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 360px) {
+    .text-slide01 a{
+        width: 100%;
+    }
+}
+
+/* 섹션05 - 캠페인 */
+.section05 {
+    background-image: url(../img/index/img_sec05_bg01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section05 .title-area,
+.section05 .title-area .more-btn{
+    color: #fff;
+}
+.section05 .campaign-wrap {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.6vw;
+}
+.section05 .campaign-wrap .campaign-item {
+    width: 100%;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.section05 .campaign-wrap .campaign-item:hover {
+    filter: brightness(60%);
+}
+.section05 .campaign-wrap .campaign-item .img-area {
+    height: 34rem;
+    background-color: #eee;
+}
+.section05 .campaign-wrap .campaign-item .img-area img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.section05 .campaign-wrap .campaign-item .info-area {
+    background: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section05 .campaign-wrap .campaign-item .info-area .tag {
+    background: var(--color-blue500);
+    padding: 0.5rem 2rem;
+    font: var(--text-ko-title-24px);
+    color: #fff;
+    border-radius: 0 0.5rem 0.5rem 0;
+    position: absolute;
+    left: 0;
+    top: -20%;
+}
+.section05 .campaign-wrap .campaign-item .info-area .text-wrap {
+    background: #fff;
+    font: var(--text-ko-title-18px);
+    color: var(--color-gray800);
+    line-height: 150%;
+    padding: 3rem ;
+}
+.section05 .campaign-wrap .campaign-item .info-area .text-wrap p:last-of-type {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+@media screen and (max-width: 900px) {
+    .section05 .campaign-wrap {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+@media screen and (max-width: 520px) {
+    .section05 .campaign-wrap {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .section05 .campaign-wrap .campaign-item .info-area .tag {
+        font: var(--text-ko-body-16px);
+    }
+    .section05 .campaign-wrap .campaign-item .info-area .text-wrap {
+        font:var(--text-ko-body-16px);
+    }
+}
+
+/******* 섹션06 - 유니세프 소식 ******/
+.section06 {
+    overflow: hidden;
+    background: var(--color-blue500);
+}
+.section06 .title-area {
+    align-items: flex-start;
+    color: #fff;
+}
+.section06 .title-area .section-sub-title {
+    color: #fff;
+}
+.section06 .title-area .more-btn {
+    color: #fff;
+}
+.swiper.section06-swiper {
+    width: 100%;
+    height: 39rem;
+    /* overflow: visible; */
+}
+
+.swiper.section06-swiper>.swiper-wrapper .swiper-slide {
+    flex-shrink: 0;
+}
+.section06-swiper .news-item {
+    width: 100%;
+    background: #fff;
+    padding: 2rem;
+    transition: 0.3s;
+}
+.section06-swiper .news-item:hover {
+    filter: brightness(80%);
+}
+.section06-swiper .news-item .img-area {
+    width: 100%;
+    height: 27rem;
+    background: #eee;
+    margin-bottom: 2rem;
+}
+.section06-swiper .news-item .img-area img {
+    object-fit: cover;
+}
+.section06-swiper .news-item .text {
+    font: var(--text-ko-body-16px);
+    line-height: 150%;
+    color: var(--color-gray800);
+    letter-spacing: -0.05rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /*원하는 라인수*/
+    -webkit-box-orient: vertical
+}
+.section06 .section06-scrollbar {
+    display: none;
+    top: unset;
+    bottom: -4rem;
+}
+@media screen and (max-width: 1320px) {
+    .section06 .section06-scrollbar {
+        display: block;
+    }
+}

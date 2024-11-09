@@ -1,0 +1,315 @@
+.sub-head-area {
+    background-image: url(../img/sub02_world/sub02_img_head_bg.jpg);
+}
+
+/********** 섹션01 - 우리아이들이 겪는 어려움 **********/
+.section01-content-wrap .info-list-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.section01-content-wrap .info-list-wrap .info-list-item {
+    padding: 1.6rem;
+    background: var(--color-blue50);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.info-list-item .img-box {
+    width: 8rem;
+    height: 8rem;
+    flex-shrink: 0;
+}
+.info-list-item .list-text-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.info-list-item .list-text-wrap h3 {
+    font: var(--text-ko-title-22px);
+    font-weight: 700;
+}
+.info-list-item .list-text-wrap p {
+    font: var(--text-ko-title-18px);
+}
+
+@media screen and (max-width: 768px) {
+    .section01-content-wrap .info-list-wrap{
+       grid-template-columns: 1fr;
+    }
+    .info-list-item .list-text-wrap {
+        gap: 1.2rem;
+    }
+    .info-list-item .list-text-wrap h3 {
+        font: var(--text-ko-title-20px);
+        font-weight: 700;
+    }
+    .info-list-item .list-text-wrap p {
+        font: var(--text-ko-body-16px);
+    }
+}
+
+/********** 섹션02 - 2023년 주요성과 **********/
+.section02 {
+    background: var(--color-blue50);
+}
+.section02-content-wrap ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1vmin;
+}
+.section02-content-wrap .content-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.6rem;
+}
+.section02-content-wrap .content-item .img-box{
+    width: 20vmin;
+    height: 20vmin;
+    background: var(--color-blue200);
+    padding: 2rem;
+}
+.section02-content-wrap .content-item p {
+    font: var(--text-ko-title-18px);
+}
+@media screen and (max-width: 768px) {
+    .section02-content-wrap ul {
+        grid-template-columns: 1fr 1fr;
+        gap: 3.6rem;
+    }
+    .section02-content-wrap .content-item .img-box{
+        width: 10rem;
+        height: 10rem;
+    }
+    .section02-content-wrap .content-item p {
+        font: var(--text-ko-body-16px);
+    }
+}
+/********** 섹션03 - 전 세계 파트너와 함께 유니세프가 하는 일 **********/
+.section03-content-wrap ul {
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.4rem;
+}
+.section03-content-wrap ul li {
+    background: #ccc;
+}
+.section03-content-wrap ul li:first-child {
+    grid-column: span 2;
+}
+.section03-content-wrap ul li .img-area {
+    height: 60vmin;
+    background: #eee;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 이미지 각각 넣기 */
+.section03-content-wrap ul li .img-area.bg-img01 {
+    background-image: url(../img/sub02_world/sub02_img_sec03_01.jpg);
+}
+.section03-content-wrap ul li .img-area.bg-img02 {
+    background-image: url(../img/sub02_world/sub02_img_sec03_02.jpg);
+}
+.section03-content-wrap ul li .img-area.bg-img03 {
+    background-image: url(../img/sub02_world/sub02_img_sec03_03.jpg);
+}
+.section03-content-wrap ul li .img-area.bg-img04 {
+    background-image: url(../img/sub02_world/sub02_img_sec03_04.jpg);
+}
+.section03-content-wrap ul li .img-area.bg-img05 {
+    background-image: url(../img/sub02_world/sub02_img_sec03_05.jpg);
+}
+
+.section03-content-wrap ul li .img-area .text-wrap {
+    width: 100%;
+    padding: 4rem 2rem;
+    background: rgba(15, 197, 252, 0.45);
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+}
+.section03-content-wrap ul li .img-area .text-wrap h3 {
+    font:var(--text-ko-title-24px);
+    font-size: 2.8rem;
+}
+.section03-content-wrap ul li .img-area .text-wrap p {
+    font: var(--text-ko-title-18px);
+}
+@media screen and (max-width: 768px) {
+    .section03 .container:nth-of-type(2) {
+        padding: 0;
+    }
+    .section03-content-wrap ul {
+        grid-template-columns: 1fr;
+    }
+    .section03-content-wrap ul li:first-child {
+        grid-column: span 1;
+    }
+    .section03-content-wrap ul li .img-area {
+        height: 40rem;
+    }
+    .section03-content-wrap ul li .img-area .text-wrap h3 {
+        font-size: 2.2rem;
+    }
+    .section03-content-wrap ul li .img-area .text-wrap p {
+        font: var(--text-ko-body-16px);
+    }
+}
+
+/********** 섹션04 - 해외사업 관련활동 **********/
+.section04 {
+    background: var(--color-blue50);
+}
+.section04-content-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.section04-content-wrap a:not(.more-btn):hover {
+    text-decoration: underline;
+}
+.sec04-left-content {
+    display: flex;
+    flex-direction: column;
+}
+.sec04-left-content .img-area{
+    position: relative;
+    width: 100%;
+    height: 52vmin;
+    background-image: url(../img/sub02_world/sub02_img_sec04_01.jpg);
+}
+.sec04-left-content .img-area .label {
+    position: absolute;
+    top: 2.8rem;
+    padding: 1rem 2rem;
+    background: var(--color-blue500);
+    color: #fff;
+    font: var(--text-ko-title-18px);
+}
+.sec04-left-content .text-wrap{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}   
+.sec04-left-content .text-wrap p:first-of-type {
+    font: var(--text-ko-title-22px);
+    font-weight: 700;
+}
+.sec04-left-content .text-wrap p:last-of-type {
+    font: var(--text-ko-body-16px)
+}
+.sec04-right-content {
+    padding-left: 3.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sec04-right-content .top-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec04-right-content .tag-wrap {
+    display: flex;
+    gap: 1.2rem;
+}
+.sec04-right-content .tag-wrap li {
+    padding: 0.8rem;
+    border: 2px solid var(--color-blue500);
+    color: var(--color-blue500);
+    font: var(--text-ko-body-16px);
+    font-weight: 600;
+}
+.sec04-right-content h3 {
+    font: var(--text-ko-title-32px);
+    font-weight: 700;
+}
+.sec04-right-content .news-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+}
+.sec04-right-content .news-wrap article {
+    width: 18vmin;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.sec04-right-content .news-wrap .img-box {
+    height: 18vmin;
+}
+.sec04-right-content .news-wrap .img-box.bg-img01 {
+    background-image: url(../img/sub02_world/sub02_img_sec04_02.jpg);
+}
+.sec04-right-content .news-wrap .img-box.bg-img02 {
+    background-image: url(../img/sub02_world/sub02_img_sec04_03.jpg);
+}
+.sec04-right-content .news-wrap .img-box.bg-img03 {
+    background-image: url(../img/sub02_world/sub02_img_sec04_04.jpg);
+}
+.sec04-right-content .news-wrap .news-text {
+    margin-top: 1.6rem;
+    font: var(--text-ko-title-18px);
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    .section04-content-wrap {
+        flex-direction: column;
+        gap: 10rem;
+    }
+    .sec04-left-content {
+        width: 100%;
+    }
+    .sec04-left-content .img-area .label {
+        font: var(--text-ko-body-14px);
+        top: 1.6rem;
+    }
+    .sec04-left-content .text-wrap p:first-of-type {
+        font: var(--text-ko-title-20px);
+        font-weight: 700;
+    }
+    
+    .sec04-right-content {
+        padding-left: 0;
+        gap: 4rem;
+    }
+    .sec04-right-content h3 {
+        font-size: 2.4rem;
+    }
+    .sec04-right-content .top-area .more-btn{
+        display: none;
+    }
+    .sec04-right-content .tag-wrap li {
+        font-size: 1.4rem;
+    }
+    .sec04-right-content .news-wrap {
+        grid-template-columns: 1fr;
+        gap: 8rem;
+    }
+    
+    .sec04-right-content .news-wrap article {
+        width: 100%;
+    }
+    .sec04-right-content .news-wrap .img-box {
+        height: 40vmin;
+    }
+    .sec04-right-content .news-wrap .news-text {
+        font: var(--text-ko-body-16px);
+    }
+    .more-btn.mo {
+        display: block;
+        padding: 2rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+}
